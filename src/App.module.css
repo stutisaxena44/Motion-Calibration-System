@@ -1,0 +1,478 @@
+/* Color Palette Mapping Variables
+   36213e - Deep Midnight Obsidian (Primary backgrounds & text anchors)
+   554971 - Muted Royal Amethyst (Secondary panels, structures & borders)
+   63768d - Slate Steel Blue (Subtitles, text balances & inactive tabs)
+   8ac6d0 - Soft Coastal Aqua (Primary interactive accents)
+   b8f3ff - Polar Glacier Cyan (Interactive ambient backing illumination) */
+
+.appShell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #36213e;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header Deck Layout styling */
+.headerDeck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(85, 73, 113, 0.2);
+  box-shadow: 0 10px 30px rgba(54, 33, 62, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.brandGroup {
+  display: grid;
+  gap: 6px;
+}
+
+.badgeKicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #63768d;
+}
+
+.mainTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #36213e;
+}
+
+.statusPills {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.pill {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 99px;
+  background: #b8f3ff;
+  border: 1px solid rgba(138, 198, 208, 0.4);
+  color: #36213e;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #63768d;
+}
+
+.activeDot {
+  background: #8ac6d0;
+  box-shadow: 0 0 8px #8ac6d0;
+}
+
+/* Luxury Action Buttons System */
+.actionStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btnPrimary,
+.btnGhost,
+.btnDanger {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #36213e, #554971);
+  color: #b8f3ff;
+  box-shadow: 0 4px 15px rgba(54, 33, 62, 0.2);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(54, 33, 62, 0.3);
+  opacity: 0.95;
+}
+
+.btnGhost {
+  background: #ffffff;
+  color: #554971;
+  border: 1px solid rgba(85, 73, 113, 0.3);
+}
+
+.btnGhost:hover {
+  background: #b8f3ff;
+  color: #36213e;
+  transform: translateY(-1px);
+}
+
+.btnDanger {
+  background: transparent;
+  color: #554971;
+  border: 1px solid transparent;
+}
+
+.btnDanger:hover {
+  background: rgba(85, 73, 113, 0.08);
+  color: #36213e;
+}
+
+/* Grid Layouts architecture */
+.stageGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+}
+
+.sideControlsColumn {
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+.cardPanel {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(85, 73, 113, 0.15);
+  box-shadow: 0 15px 35px rgba(54, 33, 62, 0.04);
+  transition: border 0.3s ease;
+}
+
+.cardPanel:hover {
+  border-color: rgba(138, 198, 208, 0.5);
+}
+
+.cardHeading {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #36213e;
+}
+
+.cardSub {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  color: #63768d;
+}
+
+/* Simplified Signal Processing Switcher */
+.toggleRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: rgba(85, 73, 113, 0.06);
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.toggleBtn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #63768d;
+  cursor: pointer;
+  border-radius: 99px;
+  transition: all 0.2s ease;
+}
+
+.toggleActive {
+  background: #ffffff;
+  color: #36213e;
+  box-shadow: 0 4px 10px rgba(54, 33, 62, 0.08);
+}
+
+/* Simulation Input Mechanics */
+.sliderStack {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.sliderRow {
+  display: grid;
+  grid-template-columns: 90px 1fr 50px;
+  align-items: center;
+  gap: 12px;
+}
+
+.sliderLabel {
+  font-size: 13px;
+  font-weight: bold;
+  color: #554971;
+}
+
+.sliderInput {
+  width: 100%;
+  accent-color: #8ac6d0;
+  cursor: pointer;
+}
+
+.sliderValue {
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+  color: #36213e;
+}
+
+/* High Fidelity 3D Perspective Laboratory viewports */
+.viewportContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.perspectiveLabBench {
+  flex: 1;
+  min-height: 440px;
+  background: #36213e;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+  user-select: none;
+  cursor: grab;
+}
+
+/* Downscaled Chassis Profile: Compact 15% reduction to match Apple viewports */
+.chassisWrapper {
+  position: relative;
+  width: 130px;
+  height: 260px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Layered Voxel 3D Smartphone Frame */
+.phoneBody3D {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.phoneLayer3D {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+.layerMiddle {
+  background: #554971;
+  border: 1px solid rgba(54, 33, 62, 0.25);
+}
+
+.layerBack {
+  background: #36213e;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  border: 2px solid #554971;
+}
+
+.layerFront {
+  background: #36213e;
+  padding: 8px;
+  border: 2.5px solid #8ac6d0;
+}
+
+/* Display Matrix internals */
+.phoneScreenGlass {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: radial-gradient(circle at center, #554971 0%, #36213e 100%);
+  border: 1px solid rgba(138, 198, 208, 0.3);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+.phoneInternalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notchCamera {
+  width: 35px;
+  height: 10px;
+  background: #1d1522;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.screenChassisMetrics {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.chassisMetricRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(138, 198, 208, 0.15);
+  padding-bottom: 4px;
+  font-size: 11px;
+  color: #63768d;
+}
+
+.chassisMetricRow strong {
+  font-size: 13px;
+  color: #b8f3ff;
+}
+
+/* State Ledger Data Spreadsheet rendering */
+.tableResponsive {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.denseTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.denseTable th,
+.denseTable td {
+  padding: 10px 8px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(85, 73, 113, 0.12);
+}
+
+.denseTable th {
+  color: #63768d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* System Diagnostic Layout rows */
+.hudGridSystem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.hudTile {
+  display: grid;
+  gap: 4px;
+}
+
+.hudTile span {
+  font-size: 12px;
+  color: #63768d;
+}
+
+.hudTile strong {
+  font-size: 14px;
+  color: #36213e;
+}
+
+.hudDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(85, 73, 113, 0.2);
+}
+
+/* Real-Time CSV Output Preview Container Styles */
+.terminalConsoleLogBox {
+  background: #1d1522;
+  border-radius: 12px;
+  padding: 14px;
+  font-family: monospace;
+  font-size: 12px;
+  color: #8ac6d0;
+  border: 1px solid rgba(85, 73, 113, 0.3);
+  overflow-x: auto;
+}
+
+.terminalHeaderLine {
+  color: #63768d;
+  border-bottom: 1px solid rgba(99, 118, 141, 0.2);
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.terminalDataRow {
+  padding: 3px 0;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(85, 73, 113, 0.08);
+}
+
+.terminalEmptyState {
+  color: #63768d;
+  font-style: italic;
+  padding: 8px 0;
+}
+
+/* Responsive Adaptive Layouts Media Queries */
+@media (max-width: 900px) {
+  .stageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .appShell {
+    padding: 12px;
+    gap: 14px;
+  }
+
+  .headerDeck {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .actionStrip {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hudGridSystem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hudDivider {
+    display: none;
+  }
+
+  .perspectiveLabBench {
+    min-height: 360px;
+  }
+}

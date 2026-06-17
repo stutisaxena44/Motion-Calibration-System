@@ -1,0 +1,32 @@
+/* Core Layout Reset for ITM Skills University Hardware Testing */
+:root {
+  color-scheme: light;
+  background: radial-gradient(circle at top left, #b8f3ff 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #8ac6d0 0%, transparent 35%),
+    #fcfbfa;
+}
+
+* {
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+}
+
+/* Smooth Touch Optimization for iPhone Safari tracking loops  */
+button,
+input,
+select {
+  font-family: "Times New Roman", Times, serif;
+  -webkit-tap-highlight-color: transparent;
+}
